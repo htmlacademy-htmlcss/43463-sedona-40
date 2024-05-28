@@ -2,7 +2,7 @@
 
 * Студент: [Алексей Бычков](https://up.htmlacademy.ru/htmlcss/40/user/43463).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
-
+* Сайт [Мой проект Sedona](https://aleksei-bychkov.github.io/43463-sedona-40/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
