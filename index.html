@@ -11,7 +11,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -40,9 +40,10 @@
     </header>
     <!--Основной контентный блок-->
     <main class="main-index">
+      <h1 class="visually-hidden">Отдых в живописном городке Седона</h1>
       <section class="main-welcome"> <!--Большая фотография для блока как декоративный элемент-->
         <img class="main-welcome-img" src="#" alt="Добро пожаловать в Седону"> <!--Контентное изображение по заданию-->
-        <h1 class="main-welcome-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2 class="main-welcome-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="main-welcome-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <!--Блок преимуществ-->
@@ -52,9 +53,7 @@
           <h3 class="advantages-title">Настоящий городок</h3>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="advantages-column-img advantages-column-img-right">
-          <img class="advantages-img" src="#" alt="Улица Седоны">
-        </div>
+        <img class="advantages-img advantages-img-right" src="#" alt="Улица Седоны на фоне гор">
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -73,9 +72,7 @@
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
-        <div class="advantages-column-img advantages-column-img-left">
-          <img class="advantages-img" src="#" alt="Мост дьявола">
-        </div>
+        <img class="advantages-img advantages-img-left" src="#" alt="Мост дьявола - опасная скальная архитектура">
       </section>
       <!--Блок услуг-->
       <section class="services">
@@ -117,15 +114,9 @@
       <footer class="page-footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <a class="footer-social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-          <a class="footer-social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-          <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
-          </a>
+          <a class="footer-social-link" href="https://vk.com/htmlacademy" aria-label="ВКонтакте"></a>
+          <a class="footer-social-link" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
+          <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Youtube"></a>
         </section>
         <section class="footer-phone">
           <h2 class="visually-hidden">Телефон для связи</h2>
