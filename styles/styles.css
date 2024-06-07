@@ -179,13 +179,18 @@ body {
   color: #333333;
 }
 
+.search-box-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Subscribe */
+
 .subscribe {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
 }
-
-/* Subscribe */
 
 .subscribe-title {
   font-size: 30px;
