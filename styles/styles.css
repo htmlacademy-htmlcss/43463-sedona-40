@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Header */
+
+/* Навигация */
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
+}
+
+.navigation-favorites-count {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 10px;
+}
+
+.button-search {
+  font-size: 16px;
+  line-height: 20px;
+  color:#ffffff;
+}
+
+
+
+/* Main Page*/
+
+/* Main welcome */
+.main-welcome {
+  background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
+  background-image: url(../images/welcome-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-welcome-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-welcome-description {
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+/* Advantages */
+
+/* Список */
+.main-index ul {
+  list-style-type: none;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-column-text {
+  background-color: #82B3D3;
+}
+
+.advantages-column-text .advantages-title {
+  color: #ffffff;
+}
+
+.advantages-column-text .advantages-description {
+  color: #ffffff;
+}
+
+/* Services */
+
+.services-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-title + .services-description {
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.services-name-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+/* Search box */
+
+.search-box-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-box-description {
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+}
+
+.subscribe {
+  background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
+  background-image: url(../images/subscribe-background.jpg);
+  background-repeat: no-repeat;
+}
+
+/* Subscribe */
+
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+/* Footer */
+
+.footer-phone-call {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Catalog Page */
+
+/* Main Catalog */
+
+.filter-wrapper {
+  background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
+  background-image: url(../images/catalog-background.jpg);
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.control-input-number-placeholder {
+  margin-left: -20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.apply-button {
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+.clear-button {
+  font-size: 16px;
+  line-height: 20px;
+  background: none;
+}
+
+/* Блок фильтра отображения результата */
+
+.sorting-results {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Карточки отелей */
+
+.cards-results-list {
+  list-style-type: none;
+}
+
+.cards-results-link {
+  text-decoration: none;
+  color:#000000;
+}
+
+.cards-results-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.cards-results-item-type, .cards-results-item-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.cards-results-item-price {
+  text-align: right;
+}
+
+.cards-details-link, .add-favorites-item  {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.add-favorites-item {
+  background-color: #82B3D3;
+}
+
+.user-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+/* Пагинация */
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+
+/* Subscribe Catalog */
+
+.subscribe.catalog {
+  background-image: none;
+  background-color: #ffffff;
+ }
+
+ .subscribe.catalog .subscribe-title {
+  color: #000000;
+ }
+
+ .subscribe.catalog .subscribe-description {
+  color: #000000;
+ }
