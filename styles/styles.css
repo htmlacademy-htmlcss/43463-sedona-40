@@ -133,6 +133,14 @@ body {
 
 /* Services */
 
+.services-list {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-food {
+  background-color: #ffffff;
+}
+
 .services-title {
   font-size: 30px;
   line-height: 36px;
