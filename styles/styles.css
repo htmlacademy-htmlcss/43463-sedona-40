@@ -26,7 +26,6 @@ body {
 .button {
   font-family: inherit;
   font-weight: 700;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756157;
@@ -46,7 +45,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
   text-decoration: none;
   color: #000000;
 }
@@ -58,7 +56,6 @@ body {
 .navigation-favorites-count {
   font-size: 10px;
   font-weight: 400;
-  text-align: center;
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 10px;
@@ -75,10 +72,26 @@ body {
 /* Main Page*/
 
 /* Main welcome */
+
 .main-welcome {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
   background-image: url(../images/welcome-background.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.main-welcome:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 57px;
+  background-image: url(../images/mask.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -57px;
 }
 
 .main-welcome-title {
@@ -131,15 +144,23 @@ body {
   color: #ffffff;
 }
 
+.advantage-square, .advantage-tourist  {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-road {
+  background-color: rgba(131, 179, 211, 0.2)
+}
+
+
+
 /* Services */
 
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.services-food {
-  background-color: #ffffff;
-}
+
 
 .services-title {
   font-size: 30px;
@@ -150,6 +171,8 @@ body {
 }
 
 .services-title + .services-description {
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
   text-align: center;
   color: #333333;
@@ -171,6 +194,10 @@ body {
   color: #333333;
 }
 
+.services-food {
+  background-color: #ffffff;
+}
+
 /* Search box */
 
 .search-box-title {
@@ -190,6 +217,8 @@ body {
 .search-box-button {
   font-size: 20px;
   line-height: 36px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Subscribe */
@@ -198,6 +227,7 @@ body {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe-title {
@@ -219,6 +249,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
+  border: none;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -240,6 +272,7 @@ body {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -247,8 +280,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  text-align: left;
-}
+  }
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -262,7 +294,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  text-align: left;
 }
 
 .control {
@@ -282,6 +313,8 @@ body {
 .apply-button {
   font-size: 16px;
   line-height: 20px;
+  border: none;
+  cursor: pointer;
 
 }
 
@@ -289,6 +322,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* Блок фильтра отображения результата */
@@ -297,7 +332,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: left;
   text-transform: uppercase;
 }
 
@@ -336,6 +370,8 @@ body {
 
 .add-favorites-item {
   background-color: #82B3D3;
+  border: none;
+  cursor: pointer;
 }
 
 .user-rating {
@@ -357,7 +393,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   text-decoration: none;
   color: #ffffff;
   background-color: #82B3D3;
@@ -381,5 +416,5 @@ body {
  }
 
  .subscribe.catalog .subscribe-description {
-  color: #000000;
+  color: #333333;
  }
