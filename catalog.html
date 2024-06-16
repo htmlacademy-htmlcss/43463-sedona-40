@@ -153,7 +153,7 @@
       </section>
       <!--Блок результата поиска и сортировки, карточки гостиниц-->
       <section class="cards-results">
-        <h2 class="visually-hidden">Результаты сортировки гостиниц</h2>
+        <h2 class="visually-hidden" hidden>Результаты сортировки гостиниц</h2> <!-- Не забыть убрать hidden -->
         <ul class="cards-results-list">
           <!--Карточка гостиницы-->
           <li class="cards-results-item">
@@ -161,52 +161,60 @@
               <img class="cards-results-img" src="images/hotel-1.jpg" width="300" height="212" alt="Каменная порода в форме кольца со звёздным небом">
               <h3 class="cards-results-title">Amara Resort & Spa</h3>
             </a>
-           <p class="cards-results-item-type">Гостиница</p>
-            <span class="cards-results-item-price">От 4000 ₽</span>
+            <div class="cards-item-box">
+              <p class="cards-results-item-type">Гостиница</p>
+              <span class="cards-results-item-price">От 4000 ₽</span>
             <a class="cards-details-link button" href="#">Подробнее</a>
             <button class="add-favorites-item button">В избранное</button>
             <!--Рейтинг гостиницы-->
             <span class="cards-rating-item">★★★★</span><!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
             <span class="user-rating">Рейтинг: 8,5</span>
+          </div>
           </li>
           <li class="cards-results-item">
             <a class="cards-results-link" href="#">
               <img class="cards-results-img" src="images/hotel-2.jpg" width="300" height="212" alt="Скала на фоне радуги и тучи">
               <h3 class="cards-results-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="cards-results-item-type">Гостиница</p>
-            <span class="cards-results-item-price">От 5000 ₽</span>
-            <a class="cards-details-link button" href="#">Подробнее</a>
-            <button class="add-favorites-item button">В избранное</button>
-            <!--Рейтинг гостиницы-->
-            <span class="cards-rating-item">★★★★</span><!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
-            <span class="user-rating">Рейтинг: 9,2</span>
+            <div class="cards-item-box">
+              <p class="cards-results-item-type">Гостиница</p>
+              <span class="cards-results-item-price">От 5000 ₽</span>
+              <a class="cards-details-link button" href="#">Подробнее</a>
+              <button class="add-favorites-item button focus-favorites-button">В избранном</button>
+              <!--Рейтинг гостиницы-->
+              <span class="cards-rating-item">★★★★</span><!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
+              <span class="user-rating">Рейтинг: 9,2</span>
+            </div>
           </li>
           <li class="cards-results-item">
             <a class="cards-results-link" href="#">
               <img class="cards-results-img" src="images/hotel-3.jpg" width="300" height="212" alt="Скала на фоне голубого неба">
               <h3 class="cards-results-title">Desert Quail Inn</h3>
             </a>
-            <p class="cards-results-item-type">Гостиница</p>
-            <span class="cards-results-item-price">От 2500 ₽</span>
-            <a class="cards-details-link button" href="#">Подробнее</a>
-            <button class="add-favorites-item button">В избранное</button>
-            <!--Рейтинг гостиницы-->
-            <span class="cards-rating-item">★★★</span><!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
-            <span class="user-rating">Рейтинг: 6,9</span>
+            <div class="cards-item-box">
+              <p class="cards-results-item-type">Гостиница</p>
+              <span class="cards-results-item-price">От 2500 ₽</span>
+              <a class="cards-details-link button" href="#">Подробнее</a>
+              <button class="add-favorites-item button">В избранное</button>
+              <!--Рейтинг гостиницы-->
+              <span class="cards-rating-item">★★★</span><!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
+              <span class="user-rating">Рейтинг: 6,9</span>
+            </div>
           </li>
           <li class="cards-results-item">
             <a class="cards-results-link" href="#">
               <img class="cards-results-img" src="images/hotel-4.jpg" width="300" height="212" alt="Скала на фоне ясного ночного неба со звёздами">
               <h3 class="cards-results-title">GreenTree Inn</h3>
             </a>
-            <p class="cards-results-item-type">Гостиница</p>
-            <span class="cards-results-item-price">От 1500 ₽</span>
-            <a class="cards-details-link button" href="#">Подробнее</a>
-            <button class="add-favorites-item button">В избранное</button>
-            <!--Рейтинг гостиницы-->
-            <span class="cards-rating-item">★★</span> <!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
-            <span class="user-rating">Рейтинг: 5,0</span>
+            <div class="cards-item-box">
+              <p class="cards-results-item-type">Гостиница</p>
+              <span class="cards-results-item-price">От 1500 ₽</span>
+              <a class="cards-details-link button" href="#">Подробнее</a>
+              <button class="add-favorites-item button">В избранное</button>
+              <!--Рейтинг гостиницы-->
+              <span class="cards-rating-item">★★</span> <!--Декоративный элемент - звёздочки, не забыть убрать заглушку-->
+              <span class="user-rating">Рейтинг: 5,0</span>
+            </div>
           </li>
         </ul>
         <!--Пагинация-->
@@ -235,7 +243,7 @@
         <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
-          <input class="subscribe-field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="subscribe-email" required>
+          <input class="subscribe-field catalog-light-field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="subscribe-email" required>
           <button class="subscribe-button button" type="submit">Подписаться</button>
         </form>
       </section>
