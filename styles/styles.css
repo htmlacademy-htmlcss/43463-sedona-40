@@ -48,8 +48,8 @@ body {
 
 .logo-link {
   width: 138px;
-  margin-right: 30px;
   z-index: 1;
+  position: absolute;
 }
 
 /* Навигация */
@@ -65,18 +65,14 @@ body {
   list-style-type: none;
   outline: 2px dotted lightblue;
   margin: 0;
+  margin-left: 170px;
   padding: 0;
   width: 465px;
   display: flex;
 }
 
-.navigation-user {
-  margin-left: auto;
-  width: 312px;
-}
-
 .navigation-item {
-  padding: 20px 16px 20px 16px;
+  padding: 20px 16px;
 }
 
 .navigation-link {
@@ -89,7 +85,11 @@ body {
 
 .navigation-link-current {
   border-bottom: 2px solid #756257;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
+}
+
+.navigation-user {
+  width: 312px;
 }
 
 .navigation-favorites-count {
@@ -110,6 +110,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color:#ffffff;
+  padding: 8px 34px;
 }
 
 
@@ -119,7 +120,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  margin-top: -10px;
 }
 
 .main-welcome {
@@ -128,9 +128,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 434px;
-  padding-top: 51px;
-  margin-bottom: 69px;
+  padding: 51px 0 82px;
 }
 
 .main-welcome:after {
@@ -151,7 +149,7 @@ body {
 }
 
 .main-welcome-textbox {
-  margin-bottom: 90px;
+  padding: 69px 0;
 }
 
 .main-welcome-title {
@@ -187,8 +185,8 @@ body {
   display: flex;
 }
 
-.advantages-item-group {
-  display: flex;
+.advantages-item {
+  box-sizing: border-box;
 }
 
 .advantages-title {
@@ -198,8 +196,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .advantages-title:after {
@@ -242,7 +239,7 @@ body {
 }
 
 .advantages-item-row {
-  padding: 112px 0 113px 0;
+  padding: 112.5px 0 112.5px 0;
 }
 
 .advantages-square, .advantages-tourist  {
@@ -253,16 +250,23 @@ body {
   background-color: rgba(131, 179, 211, 0.2)
 }
 
-.advantages {
-  margin-bottom: 64px;
+.advantages-img {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Services */
 
+.services-title-row {
+  padding: 64px 0;
+}
+
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  padding: 80px 85px 80px 85px;
+  padding: 81px 0;
+  box-sizing: border-box;
 }
 
 .services-title {
@@ -271,7 +275,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .services-title + .services-description {
@@ -299,7 +303,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  margin: 0 0 64px 0;
+  margin: 0;
 }
 
 .services-food {
@@ -334,6 +338,7 @@ body {
   line-height: 36px;
   border: none;
   cursor: pointer;
+  padding: 8px 50px;
 }
 
 /* Subscribe */
@@ -368,18 +373,33 @@ body {
   padding: 0;
 }
 
+.subscribe-field {
+  width: 412px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-light-field {
+  background-color: #F2F2F2;
+}
+
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
   border: none;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
+  padding: 8px 50px;
 }
 
 /* Footer */
 
 .page-footer-container {
-  outline: 2px solid blue;
   display: flex;
   justify-content: space-between;
   width: 1060px;
@@ -389,7 +409,7 @@ body {
 
 .social-list {
   outline: 2px dotted lightblue;
-  width: 142px;  /* Утсановить max-width? */
+  width: 142px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -400,7 +420,6 @@ body {
 }
 
 .footer-phone-call {
-  outline: 2px solid red;
   width: 331px;
   font-size: 40px;
   line-height: 40px;
@@ -408,10 +427,6 @@ body {
   color: #000000;
 }
 
-.copyright-link {
-  outline: 2px solid yellow;
-  width: 115px;
-}
 
 /* Catalog Page */
 
@@ -424,7 +439,6 @@ body {
   background-size: cover;
   color: #ffffff;
   padding: 35px 0 70px 0;
-  margin-bottom: 50px;
 }
 
 .filter-content {
@@ -479,12 +493,15 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+
 .apply-button {
   font-size: 16px;
   line-height: 20px;
   border: none;
   cursor: pointer;
   display: block;
+  padding: 8px 0;
+  width: 191px;
 }
 
 .clear-button {
@@ -494,15 +511,17 @@ body {
   border: none;
   cursor: pointer;
   display: block;
+  padding: 8px 0;
+  width: 191px;
 }
 
 /* Блок фильтра отображения результата */
 
 .sorting {
-  outline: 2px solid blue;
   width: 1060px;
   margin: 0 auto;
   display: flex;
+  padding: 50px 0 40px;
 }
 
 .sorting-right-box {
@@ -520,7 +539,6 @@ body {
 /* Карточки отелей */
 
 .cards-results {
-  outline: 2px solid blue;
   width: 1060px;
   margin: 0 auto;
 }
@@ -547,17 +565,20 @@ body {
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
   margin-bottom: 20px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .cards-results-link {
+  display: block;
   text-decoration: none;
   color:#000000;
+  margin-bottom: 16px;
 }
 
 .cards-results-img {
   display: block;
+  margin-bottom: 16px;
 }
 
 .cards-results-title {
@@ -567,25 +588,41 @@ body {
   margin: 0;
 }
 
+.cards-item-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .cards-results-item-type, .cards-results-item-price {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0 0 16px;
 }
 
 .cards-results-item-price {
+  width: 140px;
   text-align: right;
 }
 
 .cards-details-link, .add-favorites-item  {
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 16px;
+  width: 140px;
+  text-align: center;
+  padding: 8px 0;
 }
 
 .add-favorites-item {
   background-color: #82B3D3;
   border: none;
   cursor: pointer;
+}
+
+.focus-favorites-button {
+  background-color: #7DB54F;
 }
 
 .user-rating {
@@ -595,6 +632,10 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  width: 140px;
+  padding: 9px 0 8px;
 }
 
 /* Пагинация */
@@ -603,7 +644,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 400px;
+  width: 1060px;
 }
 
 .pagination-item {
@@ -618,6 +659,7 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   border-radius: 4px;
+
 }
 
 .pagination-current {
