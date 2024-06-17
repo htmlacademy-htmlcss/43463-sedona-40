@@ -49,31 +49,26 @@ body {
 .logo-link {
   width: 138px;
   z-index: 1;
-  position: absolute;
+  margin-right: 30px;
 }
 
 /* Навигация */
 
 .navigation {
   outline: 2px solid blue;
-  display: flex;
   width: 1060px;
   margin: 0 auto;
+  display: flex;
 }
 
 .navigation-list {
   list-style-type: none;
   outline: 2px dotted lightblue;
   margin: 0;
-  margin-left: 170px;
   padding: 0;
   width: 465px;
-  display: flex;
 }
 
-.navigation-item {
-  padding: 20px 16px;
-}
 
 .navigation-link {
   font-size: 20px;
@@ -85,11 +80,11 @@ body {
 
 .navigation-link-current {
   border-bottom: 2px solid #756257;
-  padding-bottom: 17px;
 }
 
 .navigation-user {
   width: 312px;
+  margin-left: auto;
 }
 
 .navigation-favorites-count {
@@ -126,6 +121,7 @@ body {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
   background-image: url(../images/welcome-background.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   padding: 51px 0 82px;
@@ -139,7 +135,6 @@ body {
   height: 57px;
   background-image: url(../images/mask.svg);
   background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 25px;
 }
 
@@ -287,6 +282,7 @@ body {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services-name-title {
@@ -348,6 +344,7 @@ body {
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 96px 0 104px 0;
 }
 
@@ -427,6 +424,10 @@ body {
   color: #000000;
 }
 
+.copyright-link {
+  align-self: flex-end;
+}
+
 
 /* Catalog Page */
 
@@ -437,6 +438,7 @@ body {
   background-image: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: #ffffff;
   padding: 35px 0 70px 0;
 }
@@ -493,6 +495,9 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.filter-button-box {
+  align-self: flex-end;
+}
 
 .apply-button {
   font-size: 16px;
@@ -502,6 +507,7 @@ body {
   display: block;
   padding: 8px 0;
   width: 191px;
+  background-color: #82B3D3;
 }
 
 .clear-button {
@@ -549,7 +555,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .cards-results-list:after {
@@ -564,10 +570,16 @@ body {
   width: 340px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
+  margin-right: 20px;
   margin-bottom: 20px;
   padding: 20px;
   box-sizing: border-box;
 }
+
+.cards-results-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 .cards-results-link {
   display: block;
@@ -659,7 +671,6 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   border-radius: 4px;
-
 }
 
 .pagination-current {
