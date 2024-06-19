@@ -31,11 +31,10 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-favorites" href="#" aria-label="Избранное">
-              <span class="navigation-favorites-count">12</span>
-              <!--Кружок с отображением кол-ва добавленных гостиниц в избранное-->
+              <span class="navigation-favorites-count">12</span> <!--Кружок с отображением кол-ва добавленных гостиниц в избранное-->
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-user-button">
             <a class="navigation-link button button-search" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -48,7 +47,7 @@
         <header class="catalog-header">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs"> <!--Хлебные крошки-->
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-item-main">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
@@ -63,7 +62,6 @@
           <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
           <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <!--Нужно ли оборачивать fieldset в ещё один тег для позиционирования?-->
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -132,15 +130,15 @@
       <!--Блок фильтра сортировки и кнопок отображения результата-->
 
       <section class="sorting">
-        <h2 class="visually-hidden" hidden>Сортировка</h2> <!-- Не забыть убрать hidden -->
+        <h2 class="visually-hidden">Сортировка</h2>
         <p class="sorting-results">Найдено гостиниц:
           <span class="results-count">38</span>
         </p>
-        <div class="sorting-right-box">
         <select class="select-control" name="sorting-filter" aria-label="Сортировка"> <!--Атрибут aria-label для screenreader-->
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <a class="sorting-view-button" href="catalog.html?view=tile"> <!--Ссылка с get-параметром-->
+        <div class="sorting-view-list">
+        <a class="sorting-view-button sorting-view-button-current" href="catalog.html?view=tile"> <!--Ссылка с get-параметром-->
           <span class="visually-hidden">Показать плиткой</span>
         </a>
         <a class="sorting-view-button" href="catalog.html?view=card"> <!--Ссылка с get-параметром-->
@@ -153,7 +151,7 @@
       </section>
       <!--Блок результата поиска и сортировки, карточки гостиниц-->
       <section class="cards-results">
-        <h2 class="visually-hidden" hidden>Результаты сортировки гостиниц</h2> <!-- Не забыть убрать hidden -->
+        <h2 class="visually-hidden">Результаты сортировки гостиниц</h2>
         <ul class="cards-results-list">
           <!--Карточка гостиницы-->
           <li class="cards-results-item">
@@ -231,7 +229,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">...</li>
+
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
