@@ -101,7 +101,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-control">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -137,17 +137,23 @@
         <select class="select-control" name="sorting-filter" aria-label="Сортировка"> <!--Атрибут aria-label для screenreader-->
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <div class="sorting-view-list">
-        <a class="sorting-view-button sorting-view-button-current" href="catalog.html?view=tile"> <!--Ссылка с get-параметром-->
-          <span class="visually-hidden">Показать плиткой</span>
-        </a>
-        <a class="sorting-view-button" href="catalog.html?view=card"> <!--Ссылка с get-параметром-->
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="sorting-view-button" href="catalog.html?view=list"> <!--Ссылка с get-параметром-->
-          <span class="visually-hidden">Показать список</span>
-        </a>
-      </div>
+        <ul class="sorting-view-list">
+          <li class="sorting-view-button sorting-view-button-current">
+            <a class="sorting-view-link" href="catalog.html?view=tile"> <!--Ссылка с get-параметром-->
+              <span class="visually-hidden">Показать плиткой</span>
+            </a>
+          </li>
+          <li class="sorting-view-button">
+            <a class="sorting-view-link" href="catalog.html?view=card"> <!--Ссылка с get-параметром-->
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="sorting-view-button">
+            <a class="sorting-view-link" href="catalog.html?view=list"> <!--Ссылка с get-параметром-->
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </li>
+      </ul>
       </section>
       <!--Блок результата поиска и сортировки, карточки гостиниц-->
       <section class="cards-results">
@@ -229,7 +235,6 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
