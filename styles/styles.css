@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   background-color: #f2f2f2;
@@ -134,7 +140,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color:#ffffff;
-  padding: 8px 0;
+  padding: 8px;
   text-align: center;
 }
 
@@ -150,6 +156,7 @@ body {
 .main-welcome {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
   background-image: url(../images/welcome-background.jpg);
+  min-width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,10 +217,6 @@ body {
   display: flex;
 }
 
-.advantages-item {
-  box-sizing: border-box;
-}
-
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -249,7 +252,6 @@ body {
   background-color: #82B3D3;
   width: 400px;
   padding: 102px 25px;
-  box-sizing: border-box;
 }
 
 .advantages-column-text .advantages-title {
@@ -268,7 +270,8 @@ body {
   padding: 112.5px 25px;
 }
 
-.advantages-square, .advantages-tourist  {
+.advantages-square,
+.advantages-tourist  {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -313,7 +316,6 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   padding: 81px 25px;
-  box-sizing: border-box;
 }
 
 .services-name-title {
@@ -360,12 +362,13 @@ body {
 
 .search-box-button {
   display: block;
+  width: 369px;
   margin: 0 auto;
   font-size: 20px;
   line-height: 36px;
   border: none;
   cursor: pointer;
-  padding: 8px 50px;
+  padding: 8px;
 }
 
 /* Subscribe */
@@ -396,20 +399,22 @@ body {
 }
 
 .subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 684px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .subscribe-field {
-  width: 412px;
+  width: 452px;
   margin: 0;
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
-  margin-right: -15px; /* Примерное значение, позже поменять */
 }
 
 .catalog-light-field {
@@ -424,7 +429,7 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  padding: 8px 50px;
+  padding: 8px;
 }
 
 /* Footer */
@@ -518,6 +523,12 @@ body {
 }
 
 .catalog-filter-group {
+  max-width: 160px;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-control {
   max-width: 288px;
 }
 
@@ -550,7 +561,7 @@ body {
   border: none;
   cursor: pointer;
   display: block;
-  padding: 8px 0;
+  padding: 8px;
   width: 191px;
   background-color: #82B3D3;
 }
@@ -562,57 +573,59 @@ body {
   border: none;
   cursor: pointer;
   display: block;
-  padding: 8px 0;
+  padding: 8px;
   width: 191px;
 }
 
 /* Блок фильтра отображения результата */
 
 .sorting {
+  display: flex;
+  justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 50px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 .sorting-results {
-  flex-grow: 1;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 8px;
-  max-width: 538px;
+  padding-top: 6px;
+  max-width: 468px;
 }
 
 .select-control {
   width: 292px;
   height: 49px;
+  margin-left: auto;
   margin-right: 70px;
 }
 
 .sorting-view-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
   width: 160px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting-view-button {
   width: 48px;
   height: 48px;
-  margin-right: 8px;
-  margin-bottom: 8px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
-.sorting-view-button:nth-child(3n) {
-  margin-right: 0;
+.sorting-view-link {
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .sorting-view-button-current {
@@ -624,33 +637,24 @@ body {
 .cards-results {
   width: 1060px;
   margin: 0 auto;
+  margin-bottom: 52px;
 }
 
 .cards-results-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.cards-results-list:after {
-  content: " ";
-  width: 1060px;
-  border-bottom: 1px solid rgba(230, 230, 230, 1);
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .cards-results-item {
   width: 340px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .cards-results-item:nth-child(3n) {
@@ -667,6 +671,7 @@ body {
 .cards-results-img {
   display: block;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .cards-results-title {
@@ -677,30 +682,32 @@ body {
 }
 
 .cards-item-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto auto auto;
+  gap: 16px 20px;
 }
 
-.cards-results-item-type, .cards-results-item-price {
+.cards-results-item-type,
+.cards-results-item-price {
   width: 140px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin: 0 0 16px;
+  margin: 0;
 }
 
 .cards-results-item-price {
   text-align: right;
 }
 
-.cards-details-link, .add-favorites-item  {
+.cards-details-link,
+.add-favorites-item  {
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 16px;
-  width: 140px;
   text-align: center;
-  padding: 8px 0;
+  padding: 8px;
 }
 
 .add-favorites-item {
@@ -714,6 +721,7 @@ body {
 }
 
 .user-rating {
+  width: 140px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -722,18 +730,30 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
-  width: 140px;
-  padding: 9px 0 8px;
+  padding: 9px 8px 8px;
 }
 
 /* Пагинация */
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   width: 1060px;
   margin: 0;
   padding: 0;
+}
+
+.pagination:before {
+  content: " ";
+  position: absolute;
+  width: 1060px;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  margin-top: -40px;
+}
+
+.pagination-item {
+  margin-bottom: 8px;
 }
 
 .pagination-item:not(:last-child) {
@@ -752,7 +772,6 @@ body {
   width: 60px;
   height: 60px;
   padding: 12px 0;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -765,7 +784,6 @@ body {
   margin-left: 68px;
   text-align: center;
   padding: 18px 0;
-  box-sizing: border-box;
 }
 
 .pagination-current {
