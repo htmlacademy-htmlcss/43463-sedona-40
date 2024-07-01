@@ -1382,11 +1382,15 @@ body {
 
 .modal-input-icon {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 20px;
-  top: 13px;
+  width: 40px;
+  height: 40px;
+  right: 11px;
+  top: 7px;
   cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
 }
 
 .modal-input-icon:hover g {
@@ -1459,13 +1463,16 @@ body {
 .number-input-minus {
   position: absolute;
   width: 20px;
-  height: 20px;
-  left: 65px;
-  right: 0;
-  top: -3px;
+  height: 46px;
+  left: 0;
+  right: -64px;
+  top: 2px;
   bottom: 0;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
 .number-input-minus:hover path,
@@ -1489,12 +1496,15 @@ body {
 .number-input-plus {
   position: absolute;
   width: 20px;
-  height: 20px;
+  height: 46px;
   right: 10px;
-  top: -3px;
+  top: 2px;
   bottom: 0;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   cursor: pointer;
+  border: none;
+  background: transparent;
 }
 
 .adult-number-input {
