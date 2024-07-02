@@ -10,7 +10,7 @@
 
   <body>
     <!--Шапка сайта с навигацией-->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="logo-link" href="index.html">
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
@@ -52,7 +52,7 @@
     </header>
     <!--Основной контентный блок-->
     <main class="main-container main-index">
-      <section class="main-welcome"> <!--Большая фотография для блока как декоративный элемент-->
+      <section class="main-welcome" data-test="hero"> <!--Большая фотография для блока как декоративный элемент-->
         <h1 class="visually-hidden">Отдых в живописном городке Седона</h1>
         <img class="main-welcome-img" src="images/welcome-text.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks"> <!--Контентное изображение по заданию-->
       </section>
@@ -187,6 +187,7 @@
                 <div class="input-box">
                 <input class="modal-input date-check-in" type="date" id="check-in" name="check-in" value="2020-04-27" required>
                 <button class="modal-input-icon check-in-icon">
+                  <span class="visually-hidden">Выберите дату заезда в календаре</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <g fill="#000" opacity=".3">
                       <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
@@ -203,6 +204,7 @@
                 <div class="input-box">
                 <input class="modal-input date-check-out" type="date" id="check-out" name="check-out" value="2023-09-01" required>
                 <button class="modal-input-icon check-out-icon">
+                  <span class="visually-hidden">Выберите дату выезда в календаре</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                     <g fill="#000" opacity=".3">
                       <path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
@@ -218,12 +220,14 @@
                 <div class="person-box">
                   <label class="modal-label-person" for="number-of-adults">Взрослые:</label>
                   <button class="number-input-minus adult-input-minus-icon">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z"/>
                     </svg>
                   </button>
                   <input class="person-number-input adult-number-input" type="number" id="number-of-adults" name="number-of-adults" value="2">
                   <button class="number-input-plus adult-input-plus-icon">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
                     </svg>
@@ -236,12 +240,14 @@
                     <span class="tooltip-text-box" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                   <button class="number-input-minus child-input-minus">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z"/>
                     </svg>
                   </button>
                   <input class="person-number-input child-number-input" id="number-of-childs" name="number-of-childs" type="number" value="2">
                   <button class="number-input-plus child-input-plus">
+                    <span class="visually-hidden">Увеличить количество детей</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                       <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
                     </svg>

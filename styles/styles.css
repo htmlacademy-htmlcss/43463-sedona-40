@@ -1067,7 +1067,7 @@ body {
 
 .cards-results-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   list-style-type: none;
   margin: 0;
@@ -1382,10 +1382,10 @@ body {
 
 .modal-input-icon {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 11px;
-  top: 7px;
+  width: 46px;
+  height: 43px;
+  right: 6px;
+  top: 4px;
   cursor: pointer;
   border: none;
   padding: 0;
@@ -1397,7 +1397,9 @@ body {
   opacity: 1;
 }
 
-/* Сюда добавить Focus состояние для иконки календаря */
+.modal-input-icon:focus g {
+  opacity: 1;
+}
 
 .modal-input-icon:active g {
   opacity: 20%;
@@ -1463,10 +1465,10 @@ body {
 .number-input-minus {
   position: absolute;
   width: 20px;
-  height: 46px;
+  height: 20px;
   left: 0;
   right: -64px;
-  top: 2px;
+  top: 14px;
   bottom: 0;
   margin: 0 auto;
   padding: 0;
@@ -1485,8 +1487,13 @@ body {
 .number-input-plus:focus-visible path {
   fill: #000000;
   fill-opacity: 1;
+}
+
+.number-input-minus:focus-visible,
+.number-input-plus:focus-visible {
   outline: 3px solid #82B3D3;
 }
+
 
 .number-input-minus:active path,
 .number-input-plus:active path {
@@ -1496,9 +1503,9 @@ body {
 .number-input-plus {
   position: absolute;
   width: 20px;
-  height: 46px;
+  height: 20px;
   right: 10px;
-  top: 2px;
+  top: 14px;
   bottom: 0;
   margin: 0 auto;
   padding: 0;
