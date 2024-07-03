@@ -609,7 +609,7 @@ body {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding: 35px 0 60px 0;
+  padding: 35px 0 57px 0;
 }
 
 .filter-content {
@@ -689,18 +689,18 @@ body {
 }
 
 .catalog-filter-group {
-  width: 160px;
+  width: 200px;
   padding: 0;
   margin: 0;
   border: none;
 }
 
 .catalog-filter-group:first-child {
-  margin-right: 60px;
+  margin-right: 20px;
 }
 
 .catalog-filter-group:nth-child(2) {
-  margin-right: 130px;
+  margin-right: 90px;
 }
 
 .catalog-filter-list {
@@ -710,8 +710,9 @@ body {
 }
 
 .catalog-filter-item {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
+
 
 .filter-control {
   max-width: 288px;
@@ -722,7 +723,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 }
 
 .filter-title-price {
@@ -730,6 +731,7 @@ body {
 }
 
 .control {
+  display: flex;
   position: relative;
   font-size: 18px;
   line-height: 23px;
@@ -995,6 +997,7 @@ body {
   background-image: url(../images/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #ffffff;
   appearance: none;
 }
 
@@ -1368,8 +1371,8 @@ body {
 
 .modal-input::-webkit-inner-spin-button,
 .modal-input::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+  display: none;
+  -webkit-appearance: none;
 }
 
 .modal-input:hover {
