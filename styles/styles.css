@@ -168,7 +168,7 @@ body {
   right: 16px;
   left: 16px;
   z-index: 1;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .navigation-user-link {
@@ -237,7 +237,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  margin-top: -1px;
 }
 
 .main-welcome {
