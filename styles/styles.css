@@ -714,6 +714,7 @@ body {
 
 .filter-control {
   max-width: 288px;
+  margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -918,8 +919,7 @@ body {
 /* Filter Buttons */
 
 .filter-button-box {
-  margin-left: auto;
-  margin-top: 57px;
+  margin-top: 56px;
   width: 191px;
 }
 
