@@ -1213,9 +1213,9 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   border-radius: 4px;
-  width: 60px;
-  height: 60px;
-  padding: 12px 0;
+  min-width: 60px;
+  width: min-content;
+  padding: 12px;
   text-align: center;
 }
 
@@ -1516,6 +1516,10 @@ body {
 
 .child-number-input {
   margin-left: 56px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .modal-tooltip {
