@@ -1369,12 +1369,6 @@ body {
   padding: 12px 50px 12px 20px;
 }
 
-.modal-input::-webkit-inner-spin-button,
-.modal-input::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
 .modal-input:hover {
   background-color: #E6E6E6;
 }
@@ -1449,12 +1443,6 @@ body {
   background-color: #F2F2F2;
   border-radius: 4px;
   margin-left: 46px;
-}
-
-.person-number-input::-webkit-outer-spin-button,
-.person-number-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .person-number-input:hover {
