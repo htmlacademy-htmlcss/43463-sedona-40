@@ -566,11 +566,12 @@ body {
 }
 
 .footer-phone-call {
-  width: 331px;
+  width: 370px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+  text-align: center;
 }
 
 .footer-phone-call:hover,
