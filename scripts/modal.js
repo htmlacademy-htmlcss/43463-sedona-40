@@ -1,14 +1,12 @@
    // Модальное окно
    window.addEventListener('DOMContentLoaded', () => {
-    const modalTrigger = document.querySelectorAll('.search-box-button'),
+    const modalTrigger = document.querySelector('.search-box-button'),
     modalCloseBtn = document.querySelector('.modal-close-button'),
     modalWindow = document.querySelector('.modal-container');
 
     // Открываем модальное окно
-    modalTrigger.forEach(item => {
-      item.addEventListener('click', () => {
-        modalWindow.style.display = 'flex';
-      });
+    modalTrigger.addEventListener('click', () => {
+      modalWindow.style.display = 'flex';
     });
 
     // Закрываем модальное окно
@@ -23,5 +21,12 @@
         modalWindow.style.display = 'none';
       }
     });
+
+    // Закрываем по клику вне элемента
+    window.onclick = function(event) {
+      if (event.target == modalWindow) {
+        modalWindow.style.display = 'none';
+      }
+    };
 
   });
