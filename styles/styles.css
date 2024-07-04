@@ -1357,7 +1357,6 @@ body {
   width: 440px;
   height: 48px;
   background-color: #F2F2F2;
-  padding-left: 12px;
   border: none;
   border-radius: 4px;
   font: inherit;
@@ -1418,14 +1417,13 @@ body {
 .person-number-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .modal-label-person {
+  width: 137px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-right: 46px;
   padding: 12px 0;
 }
 
@@ -1437,6 +1435,7 @@ body {
 .person-box-input {
   display: flex;
   width: 110px;
+  height: 48px;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
@@ -1510,17 +1509,24 @@ body {
 }
 
 .modal-label-child {
-  margin-right: 82px;
+  width: min-content;
+  max-width: 113px;
+  margin-right: 10px;
 }
 
 input[type=number] {
   -moz-appearance: textfield;
 }
 
+.tooltip-box {
+  width: 26px;
+  margin-right: 46px;
+}
+
 .modal-tooltip {
   position: absolute;
-  top: 12px;
-  left: 59px;
+  display: block;
+  padding: 11px 0;
 }
 
 .tooltip-toggle {
@@ -1550,7 +1556,7 @@ input[type=number] {
   line-height: 20px;
   left: 50%;
   transform: translateX(-50%);
-  top: 45px;
+  top: 55px;
   display: none;
 }
 
