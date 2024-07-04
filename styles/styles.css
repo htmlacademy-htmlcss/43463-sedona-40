@@ -1394,7 +1394,7 @@ body {
   opacity: 1;
 }
 
-.modal-input-icon:focus g {
+.modal-input-icon:focus-visible g {
   opacity: 1;
 }
 
@@ -1403,8 +1403,9 @@ body {
 }
 
 .modal-description-input {
-  top: 52px;
-  margin-left: 20px;
+  display: block;
+  margin-top: 4px;
+  padding: 0 20px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1424,14 +1425,24 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-right: 46px;
+  padding: 12px 0;
 }
 
 .person-box {
+  display: flex;
   position: relative;
 }
 
-.person-number-input {
+.person-box-input {
+  display: flex;
   width: 110px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.person-number-input {
+  width: 40px;
   height: 48px;
   font: inherit;
   font-size: 18px;
@@ -1440,8 +1451,13 @@ body {
   text-align: center;
   border: none;
   background-color: #F2F2F2;
-  border-radius: 4px;
-  margin-left: 46px;
+  padding: 0;
+}
+
+.person-number-input::-webkit-outer-spin-button,
+.person-number-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .person-number-input:hover {
@@ -1454,18 +1470,12 @@ body {
 }
 
 .number-input-minus {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  right: -64px;
-  top: 14px;
-  bottom: 0;
-  margin: 0 auto;
-  padding: 0;
+  width: 35px;
   cursor: pointer;
   border: none;
   background: transparent;
+  padding: 3px 0 0 3px;
+  outline: none;
 }
 
 .number-input-minus:hover path,
@@ -1480,11 +1490,10 @@ body {
   fill-opacity: 1;
 }
 
-.number-input-minus:focus-visible,
-.number-input-plus:focus-visible {
+.number-input-minus:focus-visible svg,
+.number-input-plus:focus-visible svg {
   outline: 3px solid #82B3D3;
 }
-
 
 .number-input-minus:active path,
 .number-input-plus:active path {
@@ -1492,29 +1501,16 @@ body {
 }
 
 .number-input-plus {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 10px;
-  top: 14px;
-  bottom: 0;
-  margin: 0 auto;
-  padding: 0;
+  width: 35px;
+  padding: 3px 3px 0 0;
   cursor: pointer;
   border: none;
   background: transparent;
-}
-
-.adult-number-input {
-  margin-left: 40px;
+  outline: none;
 }
 
 .modal-label-child {
-  margin-right: 22px;
-}
-
-.child-number-input {
-  margin-left: 56px;
+  margin-right: 82px;
 }
 
 input[type=number] {
@@ -1578,7 +1574,7 @@ input[type=number] {
 
 .modal-form-button {
   width: 577px;
-  height: 60px;
+  padding: 18px 0;
   border: none;
   border-radius: 10px;
   background-color: #83B3D3;
