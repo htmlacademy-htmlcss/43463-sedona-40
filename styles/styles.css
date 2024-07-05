@@ -31,13 +31,18 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
   margin: 0 auto;
+  min-width: 1280px;
+  min-height: 100%;
+}
+
+.wrapper {
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .button {
@@ -509,6 +514,7 @@ body {
 .subscribe-field {
   font: inherit;
   margin: 0;
+  height: 52px;
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
@@ -723,6 +729,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .filter-title-price {
@@ -990,12 +997,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 12px 40px 12px 20px;
+  padding: 12px 40px 12px 18px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-image: url(../images/select-arrow.svg);
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   background-color: #ffffff;
   appearance: none;
 }
@@ -1082,7 +1089,7 @@ body {
   width: 340px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
-  padding: 20px;
+  padding: 19px 20px 19px 20px;
 }
 
 .cards-results-item:nth-child(3n) {
@@ -1091,6 +1098,7 @@ body {
 
 .cards-results-link {
   display: block;
+  width: min-content;
   text-decoration: none;
   color:#000000;
   margin-bottom: 16px;
@@ -1218,13 +1226,18 @@ body {
   text-align: center;
 }
 
+.pagination-item:nth-child(4) {
+  position: relative;
+  margin-right: 76px;
+}
+
 .pagination-item:nth-child(4):after {
   content: "...";
-  display: block;
+  position: absolute;
   width: 60px;
   height: 60px;
-  margin-top: -60px;
-  margin-left: 68px;
+  top: 0;
+  right: -68px;
   text-align: center;
   padding: 18px 0;
 }
