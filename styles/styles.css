@@ -696,6 +696,7 @@ body {
   width: 200px;
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
   border: none;
 }
 
@@ -713,8 +714,8 @@ body {
   padding: 0;
 }
 
-.catalog-filter-item {
-  margin-bottom: 16px;
+.catalog-filter-item:not(:first-child) {
+  margin-top: 16px;
 }
 
 
@@ -829,6 +830,11 @@ body {
   margin-bottom: 44px;
 }
 
+.slider-input-box {
+  width: 143px;
+  height: 48px;
+}
+
 .slider-range-bar {
   position: absolute;
   height: 4px;
@@ -902,20 +908,30 @@ body {
 }
 
 .slider-input-placeholder {
-  position: absolute;
+  position: relative;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-input-placeholder-min {
-  left: 107px;
-  top: 13px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  top: -50%;
+  transform: translateY(-50%);
+  right: 12px;
+  margin-left: auto;
 }
 
 .slider-input-placeholder-max {
-  right: 20px;
-  top: 13px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  top: -50%;
+  transform: translateY(-50%);
+  right: 15px;
+  margin-left: auto;
 }
 
 .slider-bar {
@@ -971,27 +987,32 @@ body {
 
 .sorting {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 31px;
 }
 
 .sorting-results {
+  width: 468px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  margin-right: 70px;
   padding-top: 6px;
-  max-width: 468px;
+}
+
+.select-box {
+  width: 292px;
+  margin-right: 70px;
 }
 
 .select-control {
   width: 292px;
   height: 49px;
-  margin-left: auto;
-  margin-right: 70px;
   font: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1004,6 +1025,7 @@ body {
   background-position: right 18px center;
   background-color: #ffffff;
   appearance: none;
+  margin-bottom: 8px;
 }
 
 .select-control:hover,
@@ -1016,6 +1038,10 @@ body {
   opacity: 30%;
 }
 
+.sorting-view-box {
+  margin-left: auto;
+}
+
 .sorting-view-list {
   display: grid;
   grid-template-columns: repeat(3, 48px);
@@ -1024,6 +1050,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .sorting-view-link {

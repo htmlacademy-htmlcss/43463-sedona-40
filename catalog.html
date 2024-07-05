@@ -56,7 +56,8 @@
         <div class="filter-content">
         <header class="catalog-header">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs"> <!--Хлебные крошки-->
+          <!--Хлебные крошки-->
+          <ul class="breadcrumbs">
             <li class="breadcrumbs-item breadcrumbs-item-main">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
@@ -130,13 +131,17 @@
             <fieldset class="catalog-filter-group filter-control">
               <legend class="catalog-filter-title filter-title-price">Стоимость, ₽:</legend>
               <div class="slider-wrapper-inputs">
-                <label class="visually-hidden" for="price-min">Установите минимальную цену</label>
+                <div class="slider-input-box input-min-box">
+                  <label class="visually-hidden" for="price-min">Установите минимальную цену</label>
                   <input class="slider-control-input slider-control-input-min" type="number" name="price-min" id="price-min" value="0" min="0">
                   <span class="slider-input-placeholder slider-input-placeholder-min">от</span>
-                <label class="visually-hidden" for="price-max">Установите максимальную цену</label>
+                </div>
+                <div class="slider-input-box input-max-box">
+                  <label class="visually-hidden" for="price-max">Установите максимальную цену</label>
                   <input class="slider-control-input slider-control-input-max" type="number" name="price-max" id="price-max" value="9000">
                   <span class="slider-input-placeholder slider-input-placeholder-max">до</span>
                 </div>
+              </div>
               <div class="slider-wrapper">
                 <div class="slider-bar">
                   <div class="slider-range-bar" style="left: 0; right: 61px;">
@@ -165,27 +170,31 @@
         <p class="sorting-results">Найдено гостиниц:
           <span class="results-count">38</span>
         </p>
-        <select class="select-control" name="sorting-filter" aria-label="Сортировка"> <!--Атрибут aria-label для screenreader-->
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <ul class="sorting-view-list">
-          <li class="sorting-view-item">
-            <a class="sorting-view-link sorting-view-tile-icon sorting-view-link-current" href="catalog.html?view=tile"> <!--Ссылка с get-параметром-->
-              <span class="visually-hidden">Показать плиткой</span>
-            </a>
-          </li>
-          <li class="sorting-view-item">
-            <a class="sorting-view-link sorting-view-card-icon" href="catalog.html?view=card"> <!--Ссылка с get-параметром-->
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-          </li>
-          <li class="sorting-view-item">
-            <a class="sorting-view-link sorting-view-list-icon" href="catalog.html?view=list"> <!--Ссылка с get-параметром-->
-              <span class="visually-hidden">Показать список</span>
-            </a>
-          </li>
-        </ul>
+        <div class="select-box">
+          <select class="select-control" name="sorting-filter" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
+        <div class="sorting-view-box">
+          <ul class="sorting-view-list">
+            <li class="sorting-view-item">
+              <a class="sorting-view-link sorting-view-tile-icon sorting-view-link-current" href="catalog.html?view=tile"> <!--Ссылка с get-параметром-->
+                <span class="visually-hidden">Показать плиткой</span>
+              </a>
+            </li>
+            <li class="sorting-view-item">
+              <a class="sorting-view-link sorting-view-card-icon" href="catalog.html?view=card"> <!--Ссылка с get-параметром-->
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="sorting-view-item">
+              <a class="sorting-view-link sorting-view-list-icon" href="catalog.html?view=list"> <!--Ссылка с get-параметром-->
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Блок результата поиска и сортировки, карточки гостиниц-->
       <section class="cards-results" data-test="catalog">
