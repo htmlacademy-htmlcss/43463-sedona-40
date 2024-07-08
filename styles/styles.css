@@ -15,8 +15,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -60,6 +60,7 @@ body {
 /* Общие стили состояний для кнопок */
 
 /* Коричневая кнопка */
+
 .button-brown:hover,
 .button-brown:focus-visible {
   background-color: #615048;
@@ -75,6 +76,7 @@ body {
 }
 
 /* Голубая кнопка */
+
 .button-blue:hover,
 .button-blue:focus-visible {
   background-color: #68A2CA;
@@ -90,6 +92,7 @@ body {
 }
 
 /* Зелёная кнопка */
+
 .button-green:hover,
 .button-green:focus-visible {
   background-color: #6C9E42;
@@ -166,7 +169,7 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.navigation-link-current:after {
+.navigation-link-current::after {
   content: "";
   position: absolute;
   border-bottom: 2px solid #756257;
@@ -235,7 +238,7 @@ body {
   margin: 0;
 }
 
-/* Main Page*/
+/* Main Page */
 
 /* Main welcome */
 
@@ -245,7 +248,7 @@ body {
 
 .main-welcome {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
-  background-image: url(../images/welcome-background.jpg);
+  background-image: url("../images/welcome-background.jpg");
   min-width: 100%;
   background-size: cover;
   background-position: center;
@@ -254,13 +257,13 @@ body {
   padding: 51px 0 82px;
 }
 
-.main-welcome:after {
+.main-welcome::after {
   content: " ";
   position: absolute;
   display: block;
   width: 100%;
   height: 57px;
-  background-image: url(../images/mask.svg);
+  background-image: url("../images/mask.svg");
   background-repeat: no-repeat;
   margin-top: 25px;
 }
@@ -281,7 +284,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
 }
 
 .main-welcome-description {
@@ -293,6 +296,7 @@ body {
 /* Advantages */
 
 /* Список */
+
 .main-index ul {
   list-style-type: none;
   margin: 0;
@@ -318,7 +322,7 @@ body {
   margin: 0 0 30px;
 }
 
-.advantages-title:after {
+.advantages-title::after {
   content: " ";
   display: block;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -327,7 +331,7 @@ body {
   margin-top: 30px;
 }
 
-.advantages-item-row > .advantages-title:after {
+.advantages-item-row > .advantages-title::after {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -410,17 +414,17 @@ body {
 }
 
 .services-item-house {
-  background-image: url(../images/house-icon.svg);
+  background-image: url("../images/house-icon.svg");
   background-size: 75px 72px;
 }
 
 .services-item-food {
-  background-image: url(../images/food-icon.svg);
+  background-image: url("../images/food-icon.svg");
   background-size: 75px 72px;
 }
 
 .services-item-gift {
-  background-image: url(../images/gift-icon.svg);
+  background-image: url("../images/gift-icon.svg");
   background-size: 75px 76px;
 }
 
@@ -430,7 +434,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 102px 0 30px 0;
+  margin: 102px 0 30px;
 }
 
 .services-description {
@@ -457,13 +461,13 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .search-box-description {
   text-align: center;
   color: #333333;
-  margin: 0 0 54px 0;
+  margin: 0 0 54px;
 }
 
 .search-box-button {
@@ -479,7 +483,7 @@ body {
 
 .subscribe {
   background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
-  background-image: url(../images/subscribe-background.jpg);
+  background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -493,13 +497,13 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .subscribe-description {
   text-align: center;
   color: #ffffff;
-  margin: 0 0 54px 0;
+  margin: 0 0 54px;
 }
 
 .subscribe-form {
@@ -601,19 +605,18 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-
 /* Catalog Page */
 
 /* Main Catalog */
 
 .filter-wrapper {
-  background-color:#294c66; /* Фоновая заливка для критерия https://up.htmlacademy.ru/htmlcss/40/criteries#ALLY-05 */
-  background-image: url(../images/catalog-background.jpg);
+  background-color:#294c66;
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding: 35px 0 57px 0;
+  padding: 35px 0 57px;
 }
 
 .filter-content {
@@ -654,27 +657,20 @@ body {
   padding: 5px 5px 5px 0;
 }
 
-.breadcrumbs-link:hover {
-  opacity: 60%;
+.breadcrumbs-link:hover,
+.breadcrumbs-link:hover path  {
+  opacity: 0.6;
 }
 
-.breadcrumbs-link:active {
-  opacity: 30%;
+.breadcrumbs-link:active,
+.breadcrumbs-link:active path {
+  opacity: 0.3;
 }
 
-.breadcrumbs-link:hover path{
-  opacity: 60%;
-}
-
-.breadcrumbs-link:active path{
-  opacity: 30%;
-}
-
-
-.breadcrumbs-item:after {
+.breadcrumbs-item::after {
   content: "";
   position: absolute;
-  background-image: url(../images/breadcrumbs-arrow.svg);
+  background-image: url("../images/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 8px;
@@ -683,7 +679,7 @@ body {
   right: -13px;
 }
 
-.breadcrumbs-item:last-child:after {
+.breadcrumbs-item:last-child::after {
   content: none;
 }
 
@@ -717,7 +713,6 @@ body {
 .catalog-filter-item:not(:first-child) {
   margin-top: 16px;
 }
-
 
 .filter-control {
   max-width: 288px;
@@ -758,7 +753,7 @@ body {
 
 .control:hover .checkbox-input,
 .control:hover .checkbox-label {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .control-input[type="checkbox"]:focus-visible + .checkbox-input {
@@ -766,16 +761,16 @@ body {
 }
 
 .control:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:disabled + .checkbox-input,
 .control-input[type="checkbox"]:disabled ~ .checkbox-label  {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .checkbox-input {
-  background-image: url(../images/checkmark.svg);
+  background-image: url("../images/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -792,23 +787,20 @@ body {
   top: 2px;
 }
 
-.control-input[type="radio"]:checked + .radio-input:after {
+.control-input[type="radio"]:checked + .radio-input::after {
   content: "";
   position: absolute;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #3F5E72;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   margin: auto;
 }
 
 .control:hover .radio-input,
 .control:hover .radio-label {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .control-input[type="radio"]:focus-visible + .radio-input {
@@ -817,7 +809,7 @@ body {
 
 .control-input[type="radio"]:disabled + .radio-input,
 .control-input[type="radio"]:disabled ~ .radio-label  {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 /* Slider */
@@ -1020,7 +1012,7 @@ body {
   padding: 12px 40px 12px 18px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  background-image: url(../images/select-arrow.svg);
+  background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   background-color: #ffffff;
@@ -1035,7 +1027,7 @@ body {
 }
 
 .select-control:disabled {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .sorting-view-box {
@@ -1065,15 +1057,15 @@ body {
 }
 
 .sorting-view-tile-icon {
-  background-image: url(../images/tile-icon.svg);
+  background-image: url("../images/tile-icon.svg");
 }
 
 .sorting-view-card-icon {
-  background-image: url(../images/card-icon.svg);
+  background-image: url("../images/card-icon.svg");
 }
 
 .sorting-view-list-icon {
-  background-image: url(../images/list-icon.svg);
+  background-image: url("../images/list-icon.svg");
 }
 
 .sorting-view-link-current {
@@ -1115,7 +1107,7 @@ body {
   width: 340px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
-  padding: 19px 20px 19px 20px;
+  padding: 19px 20px;
 }
 
 .cards-results-item:nth-child(3n) {
@@ -1185,7 +1177,7 @@ body {
 }
 
 .rating-star-item {
-  background-image: url(../images/star-icon.svg);
+  background-image: url("../images/star-icon.svg");
   background-repeat: no-repeat;
   background-size: 18px 17px;
   background-position: center;
@@ -1221,7 +1213,7 @@ body {
   padding: 0;
 }
 
-.pagination:before {
+.pagination::before {
   content: " ";
   position: absolute;
   width: 1060px;
@@ -1230,6 +1222,8 @@ body {
 }
 
 .pagination-item {
+  min-width: min-content;
+  width: 60px;
   margin-bottom: 8px;
 }
 
@@ -1239,6 +1233,7 @@ body {
 
 .pagination-link {
   display: block;
+  padding: 12px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1246,9 +1241,6 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   border-radius: 4px;
-  min-width: 60px;
-  width: min-content;
-  padding: 12px;
   text-align: center;
 }
 
@@ -1257,7 +1249,7 @@ body {
   margin-right: 76px;
 }
 
-.pagination-item:nth-child(4):after {
+.pagination-item:nth-child(4)::after {
   content: "...";
   position: absolute;
   width: 60px;
@@ -1284,7 +1276,6 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 }
-
 
 /* Subscribe Catalog */
 
@@ -1319,7 +1310,7 @@ body {
   width: 717px;
   margin: auto;
   padding: 64px 70px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
@@ -1333,7 +1324,7 @@ body {
   border-radius: 50%;
   border: none;
   background-color: #F2F2F2;
-  background-image: url(../images/modal-close.svg);
+  background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1349,7 +1340,7 @@ body {
 }
 
 .modal-close-button:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1437,7 +1428,7 @@ body {
 }
 
 .modal-input-icon:active g {
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .modal-description-input {
@@ -1449,7 +1440,7 @@ body {
   font-weight: 400;
 }
 
-.description-input-checkin {
+.checkin-error {
   color: #FF5757;
 }
 
@@ -1535,7 +1526,7 @@ body {
 
 .number-input-minus:active path,
 .number-input-plus:active path {
-  fill-opacity: 20%;
+  fill-opacity: 0.2;
 }
 
 .number-input-plus {
@@ -1547,14 +1538,14 @@ body {
   outline: none;
 }
 
+.person-number-input {
+  appearance: textfield;
+}
+
 .modal-label-child {
   width: min-content;
   max-width: 113px;
   margin-right: 10px;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 .tooltip-box {
@@ -1577,7 +1568,7 @@ input[type=number] {
   border: none;
   background-color: #83B3D3;
   border-radius: 50%;
-  background-image: url(../images/tooltip-icon.svg);
+  background-image: url("../images/tooltip-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1599,7 +1590,7 @@ input[type=number] {
   display: none;
 }
 
-.tooltip-text-box:before {
+.tooltip-text-box::before {
   position: absolute;
   content: "";
   width: 15px;
