@@ -26,18 +26,19 @@ html {
 }
 
 body {
+  min-width: 1280px;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
   margin: 0 auto;
-  min-width: 1280px;
 }
 
 .wrapper {
   width: 1200px;
-  min-height: 100vh;
+  min-height: 100%;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -814,6 +815,10 @@ body {
 
 /* Slider */
 
+.slider-wrapper:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .slider-wrapper-inputs {
   position: relative;
   width: 288px;
@@ -939,13 +944,16 @@ body {
   width: 191px;
 }
 
+.filter-button-box > button:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .apply-button {
   font-size: 16px;
   line-height: 20px;
   display: block;
   padding: 8px;
   width: 191px;
-  margin-bottom: 32px;
   background-color: #82B3D3;
 }
 
@@ -1351,6 +1359,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 64px;
+  padding-right: 40px;
 }
 
 .modal-data-list {
@@ -1615,6 +1624,7 @@ body {
 .modal-form-button {
   width: 577px;
   padding: 18px 0;
+  font-family: inherit;
   border: none;
   border-radius: 10px;
   background-color: #83B3D3;
