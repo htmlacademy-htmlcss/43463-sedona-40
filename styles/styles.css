@@ -738,6 +738,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 /* Checkbox */
@@ -765,8 +766,8 @@ body {
   opacity: 0.3;
 }
 
-.control-input[type="checkbox"]:disabled + .checkbox-input,
-.control-input[type="checkbox"]:disabled ~ .checkbox-label  {
+.control:has(.control-input[type="checkbox"]:disabled) {
+  pointer-events: none;
   opacity: 0.3;
 }
 
@@ -808,8 +809,8 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.control-input[type="radio"]:disabled + .radio-input,
-.control-input[type="radio"]:disabled ~ .radio-label  {
+.control:has(.control-input[type="radio"]:disabled) {
+  pointer-events: none;
   opacity: 0.3;
 }
 
