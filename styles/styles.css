@@ -200,12 +200,12 @@ body {
   margin: 0;
 }
 
-.navigation-user-list .navigation-link:hover path,
+.navigation-link:hover path,
 .navigation-link:focus-visible path  {
   fill: #615048;
 }
 
-.navigation-user-list .navigation-link:active path {
+.navigation-link:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
