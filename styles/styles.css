@@ -275,8 +275,7 @@ body {
 }
 
 .main-welcome-textbox {
-  padding: 69px 250px;
-  margin-bottom: 21px;
+  padding: 69px 70px 90px;
 }
 
 .main-welcome-title {
@@ -381,7 +380,7 @@ body {
 /* Services */
 
 .services-title-row {
-  padding: 64px 250px;
+  padding: 64px 70px;
 }
 
 .services-title {
@@ -453,7 +452,7 @@ body {
 /* Search box */
 
 .search-box {
-  padding: 96px 304px;
+  padding: 96px 70px;
 }
 
 .search-box-title {
@@ -488,7 +487,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 96px 250px 104px;
+  padding: 96px 70px 104px;
 }
 
 .subscribe-title {
@@ -518,7 +517,7 @@ body {
 .subscribe-field {
   font: inherit;
   margin: 0;
-  height: 52px;
+  height: 100%;
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
@@ -617,11 +616,10 @@ body {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding: 35px 0 57px;
+  padding: 35px 70px 57px;
 }
 
 .filter-content {
-  width: 1060px;
   margin: 0 auto;
 }
 
@@ -775,6 +773,11 @@ body {
   background-image: url("../images/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.checkbox-label,
+.radio-label {
+  word-break: break-all
 }
 
 /* Radio */
@@ -989,10 +992,8 @@ body {
 .sorting {
   display: flex;
   flex-wrap: wrap;
-  width: 1060px;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 31px;
+  padding: 50px 70px 31px;
 }
 
 .sorting-results {
@@ -1097,9 +1098,9 @@ body {
 /* Карточки отелей */
 
 .cards-results {
-  width: 1060px;
   margin: 0 auto;
   margin-bottom: 52px;
+  padding: 0 70px;
 }
 
 .cards-results-list {
@@ -1133,6 +1134,8 @@ body {
 
 .cards-results-img {
   display: block;
+  width: 300px;
+  height: 212px;
   margin-bottom: 16px;
   object-fit: cover;
 }
@@ -1218,7 +1221,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  width: 1060px;
   margin: 0;
   padding: 0;
 }
@@ -1393,7 +1395,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  padding: 12px 0;
+  padding: 12px 12px 0 0;
 }
 
 .modal-input {
@@ -1473,6 +1475,7 @@ body {
 .person-box {
   display: flex;
   position: relative;
+  max-width: 247px;
   margin-bottom: 8px;
 }
 
