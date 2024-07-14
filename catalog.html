@@ -48,21 +48,17 @@
           </ul>
         </nav>
       </header>
-      <!--Блок с заголовком, хлебными крошками и фильтрами-->
+      <!-- Блок с заголовком, хлебными крошками и фильтрами -->
       <main class="main-container main-catalog" data-test="main">
         <section class="filter-wrapper">
           <div class="filter-content">
             <header class="catalog-header">
               <h1 class="catalog-title">Гостиницы Седоны</h1>
-              <!--Хлебные крошки-->
+              <!-- Хлебные крошки -->
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item breadcrumbs-item-main">
-                  <a class="breadcrumbs-link" href="index.html">
+                  <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                     <span class="visually-hidden">Главная</span>
-                    <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13">
-                      <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
-                      <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
-                    </svg>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -70,7 +66,7 @@
                 </li>
               </ul>
             </header>
-            <!--Блок фильтров-->
+            <!-- Блок фильтров -->
             <section class="catalog-hotels-filter" data-test="filter">
               <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
               <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -161,8 +157,7 @@
             </section>
           </div>
         </section>
-
-        <!--Блок фильтра сортировки и кнопок отображения результата-->
+        <!-- Блок фильтра сортировки и кнопок отображения результата -->
         <section class="sorting" data-test="catalog">
           <h2 class="visually-hidden">Сортировка</h2>
           <p class="sorting-results">Найдено гостиниц:
@@ -194,11 +189,11 @@
             </ul>
           </div>
         </section>
-        <!--Блок результата поиска и сортировки, карточки гостиниц-->
+        <!-- Блок результата поиска и сортировки, карточки гостиниц -->
         <section class="cards-results" data-test="catalog">
           <h2 class="visually-hidden">Результаты сортировки гостиниц</h2>
           <ul class="cards-results-list">
-            <!--Карточка гостиницы-->
+            <!-- Карточка гостиницы -->
             <li class="cards-results-item">
               <a class="cards-results-link" href="#">
                 <img class="cards-results-img" src="images/hotel-1.jpg" width="300" height="212" alt="Каменная порода в форме кольца со звёздным небом">
@@ -209,7 +204,7 @@
                 <span class="cards-results-item-price">От 4000 ₽</span>
                 <a class="cards-details-link button button-brown" href="#">Подробнее</a>
                 <button class="add-favorites-item button button-blue" type="button">В избранное</button>
-                <!--Рейтинг гостиницы-->
+                <!-- Рейтинг гостиницы -->
                 <ul class="cards-rating-list" aria-label="Категория - четыре звезды">
                   <li class="rating-star-item"></li>
                   <li class="rating-star-item"></li>
@@ -229,7 +224,7 @@
                 <span class="cards-results-item-price">От 5000 ₽</span>
                 <a class="cards-details-link button button-brown" href="#">Подробнее</a>
                 <button class="add-favorites-item button focus-favorites-button button-green" type="button">В избранном</button>
-                <!--Рейтинг гостиницы-->
+                <!-- Рейтинг гостиницы -->
                 <ul class="cards-rating-list" aria-label="Категория - четыре звезды">
                   <li class="rating-star-item"></li>
                   <li class="rating-star-item"></li>
@@ -249,7 +244,7 @@
                 <span class="cards-results-item-price">От 2500 ₽</span>
                 <a class="cards-details-link button button-brown" href="#">Подробнее</a>
                 <button class="add-favorites-item button button-blue" type="button">В избранное</button>
-                <!--Рейтинг гостиницы-->
+                <!-- Рейтинг гостиницы -->
                 <ul class="cards-rating-list" aria-label="Категория - три звезды">
                   <li class="rating-star-item"></li>
                   <li class="rating-star-item"></li>
@@ -268,7 +263,7 @@
                 <span class="cards-results-item-price">От 1500 ₽</span>
                 <a class="cards-details-link button button-brown" href="#">Подробнее</a>
                 <button class="add-favorites-item button button-blue" type="button">В избранное</button>
-                <!--Рейтинг гостиницы-->
+                <!-- Рейтинг гостиницы -->
                 <ul class="cards-rating-list" aria-label="Категория - две звезды">
                   <li class="rating-star-item"></li>
                   <li class="rating-star-item"></li>
@@ -277,7 +272,7 @@
               </div>
             </li>
           </ul>
-          <!--Пагинация-->
+          <!-- Пагинация -->
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -296,7 +291,7 @@
             </li>
           </ul>
         </section>
-        <!--Блок подписки на рассылку-->
+        <!-- Блок подписки на рассылку -->
         <section class="subscribe catalog" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -307,7 +302,7 @@
           </form>
         </section>
       </main>
-      <!--Подвал сайта-->
+      <!-- Подвал сайта -->
       <footer class="page-footer" data-test="footer">
         <div class="page-footer-container">
           <ul class="social-list">
