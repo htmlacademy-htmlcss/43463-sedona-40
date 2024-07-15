@@ -122,6 +122,7 @@ body {
 /* Header */
 
 .logo-link {
+  position: absolute;
   width: 140px;
   height: 70px;
   z-index: 1;
@@ -134,10 +135,6 @@ body {
   display: flex;
   position: relative;
   padding: 0 70px;
-}
-
-.logo-link {
-  position: absolute;
 }
 
 .navigation-list {
@@ -201,7 +198,7 @@ body {
 }
 
 .navigation-link:hover path,
-.navigation-link:focus-visible path  {
+.navigation-link:focus-visible path {
   fill: #615048;
 }
 
@@ -366,12 +363,12 @@ body {
 }
 
 .advantages-square,
-.advantages-tourist  {
+.advantages-tourist {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-road {
-  background-color: rgba(131, 179, 211, 0.2)
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-img {
@@ -664,11 +661,11 @@ body {
   background-repeat: no-repeat;
   background-size: 13px 13px;
   background-position: left;
-  padding: 14px 14px;
+  padding: 14px;
 }
 
 .breadcrumbs-link:hover,
-.breadcrumbs-link:hover path  {
+.breadcrumbs-link:hover path {
   opacity: 0.6;
 }
 
@@ -791,7 +788,7 @@ body {
 
 .checkbox-label,
 .radio-label {
-  word-break: break-all
+  word-break: break-all;
 }
 
 /* Radio */
@@ -1052,7 +1049,7 @@ body {
 
 .select-control:hover,
 .select-control:focus-visible {
-  border-color:  #68a2ca;
+  border-color: #68a2ca;
   outline: none;
 }
 
@@ -1187,7 +1184,7 @@ body {
 }
 
 .cards-details-link,
-.add-favorites-item  {
+.add-favorites-item {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
