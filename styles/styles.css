@@ -1135,7 +1135,7 @@ body {
 
 .cards-results-item {
   width: 340px;
-  border: 1px solid rgba(230, 230, 230, 1);
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 19px 20px;
 }
@@ -1249,7 +1249,7 @@ body {
   content: " ";
   position: absolute;
   width: 1060px;
-  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  border-bottom: 1px solid #e6e6e6;
   margin-top: -40px;
 }
 
